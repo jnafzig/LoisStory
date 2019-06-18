@@ -1,5 +1,6 @@
-main.aux
-main.log
-main.out
-main.pdf
-main.toc
+*.aux
+*.log
+*.out
+*.pdf
+*.toc
+*.swp
