@@ -1,0 +1,9 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+- docker pull blang/latex:ubuntu 
+- docker run blang/latex:ubuntu /bin/sh latexdockercmd.sh pdflatex main.tex
+- docker ps -a
