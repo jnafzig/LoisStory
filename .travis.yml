@@ -8,3 +8,12 @@ before_install:
 
 script:
 - docker run -v "$PWD":/data blang/latex:ubuntu pdflatex main.tex
+
+deploy:
+  provider: pages
+  target_branch: gh-pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
