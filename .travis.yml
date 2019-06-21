@@ -9,7 +9,7 @@ before_install:
 script:
 - docker run -v "$PWD":/data blang/latex:ubuntu pdflatex main.tex
 - mkdir pdf
-- mv main.pdf pdf/main.pdf
+- mv main.pdf pdf/out.pdf
 
 deploy:
   provider: pages
